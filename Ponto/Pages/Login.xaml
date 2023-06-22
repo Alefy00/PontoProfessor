@@ -1,0 +1,47 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ponto.Pages.Login"
+             Title="Login"
+             BackgroundColor="White">
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Padding="16">
+
+        <Image Source="logo.png"
+               Aspect="AspectFit"
+               WidthRequest="200"
+               Margin="0,0,0,16"/>
+
+        <Label x:Name="lblMatricula"
+               Text="Matrícula"
+               TextColor="White"
+               Margin="0,0,0,8"/>
+
+        <Entry x:Name="txtMatricula"
+               Placeholder="Login"
+               Margin="0,0,0,8"
+               BackgroundColor="White"
+               HeightRequest="50"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Label x:Name="lblSenha"
+               Text="Senha"
+               TextColor="White"
+               Margin="0,8,0,8"/>
+
+        <Entry x:Name="txtSenha"
+               Placeholder="Senha"
+               IsPassword="True"
+               Margin="0,8,0,8"
+               BackgroundColor="White"
+               HeightRequest="50"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Button Text="Login"
+                x:Name="btnLogin"
+                Clicked="btnLogin_Clicked"
+                Margin="0,16,0,0"
+                BackgroundColor="#43054e"
+                TextColor="White"/>
+    </StackLayout>
+</ContentPage>
